@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" src="../Crystal-Collector/assets/css/style.css">
+</head>
+
+<body>
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4 text-center">The Crystal Collector</h1>
+                <p class="display-7 ml-5">You will be given a random number at the start of the game. <br> <br>
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. <br> 
+                You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number. <br> 
+                The value of each crystal is hidden from you until you click on it. <br> 
+                Each time when the game starts, the game will change the values of each crystal</p> 
+                <p class="lead" id="statusText"></p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card"> 
+                            <div class="card-header text-center display-5">
+                                Number Match
+                            </div>
+                            <div class="card-body text-center" id="#">
+                                4
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card"> 
+                            <div class="card-header text-center display-5">
+                                Total Score
+                            </div>
+                            <div class="card-body text-center" id="winsText">
+                                0
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="row">
+                    <div class="card-group mx-auto mt-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/red-crystal.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/blue-crystal.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/yellow-crystal.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/mag-crystal.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-5">
+                    <div class="col-6">
+                        <div class="card"> 
+                            <div class="card-header text-center display-5">
+                                Wins
+                            </div>
+                            <div class="card-body text-center" id="#">
+                                4
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-6">
+                        <div class="card"> 
+                            <div class="card-header text-center display-5">
+                                Losses
+                            </div>
+                            <div class="card-body text-center" id="winsText">
+                                0
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+</body>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"></script>
+
+</html>
