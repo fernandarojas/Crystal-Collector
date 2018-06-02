@@ -13,6 +13,8 @@ $(document).ready(function() {
 
     function updateScore() { 
         $("#currentScore").html(currentScore);
+        $("#winsText").html(wins);
+        $("#lossesText").html(losses);
     };
 
     function reset() {
@@ -21,7 +23,7 @@ $(document).ready(function() {
         blueCrystal = Math.floor((Math.random() * 11) + 1);
         yellowCrystal = Math.floor((Math.random() * 11) + 1);
         magCrystal = Math.floor((Math.random() * 11) + 1);
-        currentScore = 0; 
+        currentScore = 0;
 
         $("#targetScore").html(targetScore);
         $("#currentScore").html(currentScore);
@@ -36,6 +38,7 @@ $(document).ready(function() {
     function playGame(value) {
         currentScore += value;
         updateScore();
+        statusUpdate();
 
         if (currentScore > targetScore) {
             losses++; 
@@ -68,3 +71,10 @@ $(document).ready(function() {
             playGame(magCrystal);
         });
 });
+
+
+    function statusUpdate() { 
+        if (currentScore > 0) { 
+            $("#statusText").html(" ");
+        }
+    };
